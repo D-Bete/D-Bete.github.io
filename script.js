@@ -1,7 +1,3 @@
-/* =========================================================
-   SMOOTH NAVIGATION
-   ========================================================= */
-
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
 
     link.addEventListener("click", (event) => {
@@ -29,14 +25,8 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 
 });
 
-
-/* =========================================================
-   SCROLL REVEAL
-   ========================================================= */
-
 const revealElements =
     document.querySelectorAll(".reveal");
-
 
 const revealObserver =
     new IntersectionObserver(
@@ -64,23 +54,16 @@ const revealObserver =
 
     );
 
-
 revealElements.forEach((element) => {
 
     revealObserver.observe(element);
 
 });
 
-
-/* =========================================================
-   STAGGERED CARD ANIMATIONS
-   ========================================================= */
-
 const animatedGroups = [
     ".social-grid .reveal",
     ".projects-grid .reveal"
 ];
-
 
 animatedGroups.forEach((selector) => {
 
@@ -94,4 +77,3 @@ animatedGroups.forEach((selector) => {
         });
 
 });
-
